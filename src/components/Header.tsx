@@ -3,12 +3,9 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,20 +16,10 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    document.body.style.overflow = !isMenuOpen ? 'hidden' : '';
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-    document.body.style.overflow = '';
-  };
-
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        <Link href="/" onClick={closeMenu}>
+        <Link href="/">
           <Image
             src="/imagens/logonova.png"
             alt="Logo Donna Negócios"
@@ -43,16 +30,16 @@ export default function Header() {
           />
         </Link>
 
-        <button className="menu-toggle" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
-        </button>
+        <div className="desktop-nav">
+          <Link href="#lancamentos">Lançamentos</Link>
+          <Link href="#sobre">Sobre</Link>
+          <Link href="https://wa.me/553433339576?text=Olá! Gostaria de saber mais sobre os empreendimentos.">Contato</Link>
+        </div>
 
-        <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <Link href="#lancamentos" onClick={closeMenu}>Lançamentos</Link>
-          <Link href="#sobre" onClick={closeMenu}>Sobre</Link>
-          <Link href="https://wa.me/553433339576?text=Olá! Gostaria de saber mais sobre os empreendimentos." onClick={closeMenu}>Contato</Link>
-        </nav>
+        <Link href="https://wa.me/553433339576?text=Olá! Gostaria de saber mais sobre os empreendimentos." className="mobile-contact">
+          Contato
+        </Link>
       </div>
     </header>
   );
-} 
+}
