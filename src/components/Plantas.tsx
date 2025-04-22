@@ -218,7 +218,7 @@ export default function Plantas() {
 
   const handleWhatsAppClick = (e: React.MouseEvent, nome: string) => {
     e.stopPropagation();
-    const message = `Olá, gostaria de saber mais sobre o empreendimento ${nome}`;
+    const message = `[L05] Olá, gostaria de saber mais sobre o empreendimento ${nome}`;
     const whatsappUrl = `https://wa.me/553433339576?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

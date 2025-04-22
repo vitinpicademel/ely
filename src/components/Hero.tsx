@@ -70,7 +70,12 @@ export default function Hero() {
             Ver Lançamentos
             <FontAwesomeIcon icon={faArrowRight} className="btn-icon" />
           </a>
-          <a href="https://wa.me/553433339576?text=Olá,%20gostaria%20de%20conhecer%20os%20lançamentos%20disponíveis" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+          <a 
+            href="https://wa.me/553433339576?text=[L05] Olá, gostaria de conhecer os lançamentos disponíveis" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-whatsapp"
+          >
             Falar com Especialista
           </a>
         </motion.div>
