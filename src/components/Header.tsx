@@ -30,12 +30,6 @@ export default function Header() {
           />
         </Link>
 
-        <div className="desktop-nav">
-          <Link href="#lancamentos">Lançamentos</Link>
-          <Link href="#sobre">Sobre</Link>
-          <Link href="https://wa.me/553433339576?text=Olá! Gostaria de saber mais sobre os empreendimentos.">Contato</Link>
-        </div>
-
         <Link href="https://wa.me/553433339576?text=Olá! Gostaria de saber mais sobre os empreendimentos." className="mobile-contact">
           Contato
         </Link>
