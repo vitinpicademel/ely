@@ -967,10 +967,17 @@ h1, h2, h3 {
   }
 
   .lancamento-card .descricao {
+    display: none;
     font-size: 1.1rem;
     padding: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1.2rem;
+  }
+
+  .lancamento-card .descricao.expanded {
+    display: block;
+    max-height: none;
+    -webkit-line-clamp: unset;
   }
 
   .buttons-container {
