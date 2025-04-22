@@ -906,20 +906,78 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+  .lancamentos-section {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .lancamentos-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .lancamento-card {
+    margin: 0 -1rem;
+    border-radius: 0;
+  }
+  
+  .lancamento-imagem {
+    height: 550px;
+  }
+  
+  .lancamento-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .lancamento-card .info-container {
+    padding: 1.5rem;
+  }
+
+  .lancamento-card .status-tag {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    top: 20px;
+    right: 20px;
+  }
+
+  .lancamento-card .localizacao {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .lancamento-card .area {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .lancamento-card .descricao {
+    font-size: 1.1rem;
+    padding: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
   .buttons-container {
-    gap: 0.6rem;
-    margin-top: 1rem;
+    gap: 1rem;
+    margin-top: 1.2rem;
   }
 
   .btn-ler-mais,
   .btn-whatsapp-card {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.1rem;
   }
 
   .btn-whatsapp-card .whatsapp-icon,
   .btn-ler-mais .btn-icon {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -942,48 +1000,6 @@ h1, h2, h3 {
   .lancamentos-descricao {
     font-size: 1.1rem;
     padding: 0 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .lancamentos-section {
-    padding: 4rem 0;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-
-  .lancamentos-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding: 0 1rem;
-  }
-  
-  .lancamento-imagem {
-    height: 450px;
-  }
-  
-  .lancamento-card h3 {
-    font-size: 1.8rem;
-  }
-
-  .lancamento-card .info-container {
-    padding: 2rem;
-  }
-
-  .lancamento-card .status-tag {
-    padding: 8px 16px;
-    font-size: 1rem;
-    top: 20px;
-    right: 20px;
-  }
-
-  .btn-ler-mais,
-  .btn-whatsapp-card {
-    width: 100%;
-    justify-content: center;
-    padding: 12px;
   }
 }
 
