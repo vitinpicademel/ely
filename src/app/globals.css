@@ -771,11 +771,11 @@ h1, h2, h3 {
   letter-spacing: 0.5px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   position: absolute;
-  top: 30%;
+  top: 30px;
   left: 30px;
-  transform: translateY(-50%);
+  transform: none;
   z-index: 10;
-  max-width: 70%;
+  max-width: 60%;
   text-align: left;
   margin: 0;
   color: var(--light-color);
@@ -956,8 +956,8 @@ h1, h2, h3 {
   .lancamento-card h3 {
     font-size: 1.6rem;
     left: 15px;
-    max-width: 80%;
-    top: 25%;
+    top: 15px;
+    max-width: 60%;
     padding: 8px 16px;
   }
 
