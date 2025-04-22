@@ -50,7 +50,7 @@ export default function Header() {
         <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <Link href="#lancamentos" onClick={closeMenu}>Lançamentos</Link>
           <Link href="#sobre" onClick={closeMenu}>Sobre</Link>
-          <Link href="tel:+553433339576" onClick={closeMenu}>Contato</Link>
+          <Link href="https://wa.me/553433339576?text=Olá! Gostaria de saber mais sobre os empreendimentos." onClick={closeMenu}>Contato</Link>
         </nav>
       </div>
     </header>
