@@ -1846,4 +1846,36 @@ h1, h2, h3 {
     max-height: 100%;
     border-radius: 0;
   }
+}
+
+.titulo-empreendimento {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transform: none;
+  z-index: 10;
+  max-width: 50%;
+  text-align: left;
+  margin: 0;
+  color: var(--light-color);
+  line-height: 1.2;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+  .titulo-empreendimento {
+    font-size: 1.6rem;
+    left: 15px;
+    top: 15px;
+    max-width: 45%;
+    padding: 8px 16px;
+  }
 } 

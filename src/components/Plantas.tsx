@@ -260,10 +260,12 @@ export default function Plantas() {
                       'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
                   }}>
                     <div className="status-tag">{empreendimento.status}</div>
+                    {empreendimento.id !== 1 && (
+                      <h3 className="titulo-empreendimento">{empreendimento.nome}</h3>
+                    )}
                     <div className="info-container" style={{
                       marginTop: empreendimento.id === 1 ? 'auto' : '0'
                     }}>
-                      {empreendimento.id !== 1 && <h3>{empreendimento.nome}</h3>}
                       <p className="localizacao">
                         <FontAwesomeIcon icon={faMapMarkerAlt} />
                         {empreendimento.localizacao}
