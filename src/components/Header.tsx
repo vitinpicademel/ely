@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -29,6 +29,14 @@ export default function Header() {
             priority
           />
         </Link>
+
+        <nav className="desktop-nav">
+          <Link href="#lancamentos">Lançamentos</Link>
+          <Link href="#sobre">Sobre</Link>
+          <Link href="https://wa.me/553433339576?text=Olá! Gostaria de saber mais sobre os empreendimentos.">
+            Contato
+          </Link>
+        </nav>
 
         <Link href="https://wa.me/553433339576?text=Olá! Gostaria de saber mais sobre os empreendimentos." className="mobile-contact">
           Contato
