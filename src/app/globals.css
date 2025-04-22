@@ -102,7 +102,7 @@ h1, h2, h3 {
 @media (max-width: 768px) {
   .header {
     height: 50px;
-    padding-top: 5px;
+    padding-top: 0;
     background: transparent;
   }
 
@@ -116,11 +116,11 @@ h1, h2, h3 {
   }
 
   .logo {
-    max-height: 35px;
+    max-height: 45px;
   }
 
   .scrolled .logo {
-    max-height: 30px;
+    max-height: 40px;
   }
 
   .mobile-contact {
