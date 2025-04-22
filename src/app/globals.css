@@ -914,15 +914,26 @@ h1, h2, h3 {
     font-size: 2.2rem;
   }
 
+  .lancamentos-section .container {
+    padding: 0;
+  }
+
   .lancamentos-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0;
+    margin: 0;
   }
   
   .lancamento-card {
-    margin: 0 -1rem;
+    margin: 0;
     border-radius: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
   
   .lancamento-imagem {
@@ -965,6 +976,7 @@ h1, h2, h3 {
   .buttons-container {
     gap: 1rem;
     margin-top: 1.2rem;
+    padding: 0 1.5rem;
   }
 
   .btn-ler-mais,
